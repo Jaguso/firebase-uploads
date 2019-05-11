@@ -8,11 +8,16 @@ const fs = require('fs');
 
 const gcconfig = {
     projectId: "upload-594e2",
-    keyFilename: "upload-594e2-firebase-adminsdk-1nesi-85fa7963cc.json"
+    keyFilename: "./upload-594e2-firebase-adminsdk-1nesi-85fa7963cc.json"
 }
 
-const gcs = require('@google-cloud/storage', gcconfig);
+const {gcs} = require('@google-cloud/storage', gcconfig);
 
+// var Storage = require('@google-cloud/storage');
+// var gcs = Storage({
+//     projectId: "upload-594e2",
+//     keyFilename: "upload-594e2-firebase-adminsdk-1nesi-85fa7963cc.json"
+// });
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
